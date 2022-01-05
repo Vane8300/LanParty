@@ -1,0 +1,36 @@
+DESCRIERE TEMA:
+Facultatea de Automatica si Calculatoare prin LSAC organizează in fiecare semestru un LAN Party la care participă toți studenții care vor sa își testeze abilitățile la un anumit joc. Se dorește realizarea unei soluții software(program executabil) ce poate automatiza acest proces.
+Pentru implementarea fiecarui tast am folosit STL(Standard Template Library).
+
+
+===============================================TASK 1==========================================
+- dupa ce am citit datele din fisierul de input cu ajutorul functiei reading()
+- am adaugat folosit metodele deja implementat pentru list
+- am parcurs cu ajutorul unu iterator lista creata si dupa am afisat in fisierul de output cu ajutorul functiei showingFile()
+
+
+===============================================TASK 2==========================================
+- am aflat cate echipe trebuie sa stergem astfel incat sa raman in final cu un numar de echipe egal cu o putere de a lu' 2(diferenta dintre nr. echipe initiale si nr. de echipe finale sa fie minim)
+- dupa m-am folosit de algoritmii pentru gasirea valorii minime si am sters echipele cu puctajul cel mai mic. (cu ajutorul functiilor implementate pentru list) 
+- in final, am parcurs lista cu ajutorul unui iterator si dupa am afisat in fisierul de output folosind functia showingFile()
+
+
+===============================================TASK 3==========================================
+- am adaugat elementele din lista formata la TASK-ul 2 (cate 2) intr-o coada cu meciuri
+- dupa am extras castigatorii in urma meciurilor formate si i-am adaugat intr-o stiva de invingatori, am facut asta folosind functia PickTheWinner() si metodele implementate pentru stack, adaugand la punctajul echipelor castigatoare +1
+- in acelasi timp, am creat si o stiva de invinsi, in care am adaugat pierzatorii din meciurile create anterior
+- am sters stiva de invisi 
+- din stiva de invingatori am format noua coada cu meciuri, si am repetat pasii pana am aflat castigatorul final (cand stiva de invigatori a ajuns sa aiba 8 echipe pe aceastea le-am salvat intr-o noua lista)
+
+
+===============================================TASK 4==========================================
+- am parcurs cu un iterator noua lista formata la TASK-ul3 si am adaugat elemente din aceasta intr-un arbore
+- cu ajutorul metodelor deja implementate pentru set, am ordonat arborele descrescator in functie de punctajul pe echipa
+- cu un iterator am parcurs arborele si l-am afisat folosit functia in fidierul de output showinfFileSecond()
+
+
+===============================================TASK 5==========================================
+- deaorece set-ul realizeaza un arbore binar balansat, am folosi acelasi arbore si la acest task
+- pentru a afla ce echipe avem pe nivelul 2 al arborelui, m-am folosit de un vector in care am bagat toate echipele din arborele meu 
+- in final pentru a afisat nivelul 2 al arborelui, am afisat elementele de pe pozitiile pare ale vectorului
+
